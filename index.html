@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Import fontAwesome -->
+    <script src="https://kit.fontawesome.com/210f09aba9.js" crossorigin="anonymous"></script>
+
+    <title>eCommerce_Layout</title>
+</head>
+
+<body>
+    <!-- Start of the Header - Navbar -->
+    <header class="navbar navbar-light bg-light">
+        <a href="#" class="navbar-brand text-info">
+            <i class="fas fa-dog fa-2x mr-2"></i>
+            <strong>黑狗兄西服</strong>
+        </a>
+        <div class="dropdown ml-auto">
+            <button class="btn btn-sm btn-cart" data-toggle="dropdown">
+                <i class="fa fa-shopping-cart fa-2x"></i>
+                <span class="badge badge-pill badge-danger">10</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px;">
+                <div class="px-4 py-3">
+                    <h6>已選擇商品</h6>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title=" 切斯特大衣 一件">
+                                        <i class="fa fa-trash-o"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">切斯特大衣</td>
+                                <td class="align-middle">一件</td>
+                                <td class="align-middle text-right">$1799</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal" data-title=" 沙漠靴 一雙">
+                                        <i class="fa fa-trash-o"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">沙漠靴</td>
+                                <td class="align-middle">一雙</td>
+                                <td class="align-middle text-right">$2199</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="btn btn-primary btn-block">結帳！</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Start of the Banner -->
+    <div class="jumbotron jumbotron-fluid jumbotron-bg d-flex align-items-end">
+        <div class="container">
+            <div class="bg-outerSpace p-3">
+                <h1 class="display-4">客製化剪裁</h1>
+                <p class="lead">三十年經驗老師傅親自操刀，保證最符合您要的身形
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start the Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group sticky-top">
+                    <a href="#pane1" class="list-group-item list-group-item-action active" data-toggle="list"><i
+                            class="fas fa-male"></i>
+                        男裝</a>
+                    <a href="#pane2" class="list-group-item list-group-item-action" data-toggle="list"><i
+                            class="fas fa-female"></i> 女裝</a>
+                    <a href="#pane3" class="list-group-item list-group-item-action" data-toggle="list"><i
+                            class="fas fa-child"></i> 童裝</a>
+                    <a href="#pane4" class="list-group-item list-group-item-action disabled" tabindex="-1"
+                        aria-disabled="true" data-toggle="list"><i class="fas fa-socks"></i> 配件</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="pane1" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 text-center h-100 box-shadow">
+                                    <img src="https://picsum.photos/id/167/600" class="card-img-top"
+                                        alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">切斯特大衣</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="product.html" class="btn btn-outline-danger d-block">限時搶購中</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 text-center h-100 box-shadow">
+                                    <img src="https://picsum.photos/id/167/600" class="card-img-top"
+                                        alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">沙漠靴</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text">This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary d-block">購買</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center h-100 box-shadow border-0">
+                                    <img src="https://picsum.photos/id/167/600" class="card-img-top"
+                                        alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">德比鞋</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary d-block disabled">補貨中</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center h-100 box-shadow border-0">
+                                    <img src="https://picsum.photos/id/167/600" class="card-img-top"
+                                        alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">牛角扣大衣</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary disabled">XS</a>
+                                            <a href="#" class="btn btn-outline-secondary">S</a>
+                                            <a href="#" class="btn btn-outline-secondary">M</a>
+                                            <a href="#" class="btn btn-outline-secondary">L</a>
+                                            <a href="#" class="btn btn-outline-secondary">XL</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center h-100 box-shadow border-0">
+                                    <img src="https://picsum.photos/id/167/600" class="card-img-top"
+                                        alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">僧侶鞋</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">XS</a>
+                                            <a href="#" class="btn btn-outline-secondary">S</a>
+                                            <a href="#" class="btn btn-outline-secondary">M</a>
+                                            <a href="#" class="btn btn-outline-secondary">L</a>
+                                            <a href="#" class="btn btn-outline-secondary disabled">XL</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pane2" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center h-100 box-shadow border-0">
+                                    <img src="https://picsum.photos/id/342/600" class="card-img-top"
+                                        alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">荷葉邊雪紡上衣</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">XS</a>
+                                            <a href="#" class="btn btn-outline-secondary">S</a>
+                                            <a href="#" class="btn btn-outline-secondary">M</a>
+                                            <a href="#" class="btn btn-outline-secondary">L</a>
+                                            <a href="#" class="btn btn-outline-secondary disabled">XL</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pane3" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 text-center h-100 box-shadow">
+                                    <img src="https://picsum.photos/id/325/600" class="card-img-top"
+                                        alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">高領束腰洋裝</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary disabled">XS</a>
+                                            <a href="#" class="btn btn-outline-secondary">S</a>
+                                            <a href="#" class="btn btn-outline-secondary">M</a>
+                                            <a href="#" class="btn btn-outline-secondary">L</a>
+                                            <a href="#" class="btn btn-outline-secondary">XL</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center h-100 box-shadow border-0">
+                                    <img src="https://picsum.photos/id/325/600" class="card-img-top"
+                                        alt="product image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">拼接條紋套頭衫</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-danger d-block">限時搶購中</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pane3" role="tabpanel">Under Construction...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start of the Footer -->
+    <footer class="bg-light d-flex justify-content-between py-4">
+        <div class="text-secondary px-5">
+            Copyright © 2019 Bold & Observant.
+        </div>
+        <div class="px-5">
+            <a class="text-info mr-3" href="#">Facebook</a>
+            <a class="text-info mr-3" href="#">Instagram</a>
+            <a class="text-info" href="#">About</a>
+        </div>
+    </footer>
+
+    <!-- Start of the Removal Modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="removeModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="text-white">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>是否刪除此筆訂單？</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-outline-danger">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- script to automatic import info from each button's data-title attribute    -->
+    <script>
+        $(document).ready(function () {
+            $('#removeModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget) // 選則當初觸發事件的按鈕
+                var title = button.data('title') // 使用 data-* 來取得特定內容
+
+                var modal = $(this)
+                modal.find('.modal-title').text('刪除' + title) // 寫入資料
+            })
+        });
+    </script>
+
+</body>
+
+</html>

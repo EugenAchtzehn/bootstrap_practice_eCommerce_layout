@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Import fontAwesome -->
+    <script src="https://kit.fontawesome.com/210f09aba9.js" crossorigin="anonymous"></script>
+
+    <title>eCommerce_Layout</title>
+</head>
+
+<body>
+    <!-- Start of the Header - Navbar -->
+    <header class="navbar navbar-light bg-light">
+        <a href="#" class="navbar-brand text-info">
+            <i class="fas fa-dog fa-2x mr-2"></i>
+            <strong>黑狗兄西服</strong>
+        </a>
+        <div class="dropdown ml-auto">
+            <button class="btn btn-sm btn-cart" data-toggle="dropdown">
+                <i class="fa fa-shopping-cart fa-2x"></i>
+                <span class="badge badge-pill badge-danger">10</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px;">
+                <div class="px-4 py-3">
+                    <h6>已選擇商品</h6>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title=" 切斯特大衣 一件">
+                                        <i class="fa fa-trash-o"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">切斯特大衣</td>
+                                <td class="align-middle">一件</td>
+                                <td class="align-middle text-right">$1799</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="btn btn-primary btn-block">結帳！</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Start the Main Content -->
+    <div class="container main-content py-5">
+        <h1 class="text-center mb-3 text-secondary">黑狗兄西服 結帳</h1>
+        <div class="form-row text-center">
+            <div class="col-12 col-sm">
+                <div class="alert alert-dark alert-rounded" role="alert">
+                    1. 確認訂單
+                </div>
+            </div>
+            <div class="col-12 col-sm">
+                <div class="alert alert-success alert-rounded" role="alert">
+                    2. 付款方式
+                </div>
+            </div>
+            <div class="col-12 col-sm">
+                <div class="alert alert-light alert-rounded" role="alert">
+                    3. 完成訂購
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header d-flex" id="headingOne">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            購物項目明細 <i class="fas fa-angle-down"></i>
+                        </button>
+                        <span class="ml-auto h4 pt-2 text-danger">$1859</span>
+                    </div>
+                </div>
+
+                <!-- 開始折疊式商品列表 -->
+                <div class="accordion" id="accordionExample">
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <table class="table table-sm">
+                            <thead>
+                                <th width="50"></th>
+                                <th width="100"></th>
+                                <th>商品名</th>
+                                <th width="100">數量</th>
+                                <th width="80">小計</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="align-middle text-center">
+                                        <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                            data-title=" 切斯特大衣 一件">
+                                            <i class="fa fa-trash-o"></i>
+                                        </a>
+                                    </td>
+                                    <td class="text-center">
+                                        <img src="https://picsum.photos/id/167/800/600" alt="product image" width="80"
+                                            class="img-rounded p-1 img-border">
+                                    </td>
+                                    <td class="align-middle">切斯特大衣</td>
+                                    <td class="align-middle">一件</td>
+                                    <td class="align-middle text-right">$1799</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="text-left">運費</td>
+                                    <td class="text-right">$60</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="text-left">合計</td>
+                                    <td class="text-right"><strong>$1859</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 開始聯絡資訊表單 -->
+                <div class="bg-light text-center py-3 mt-5 mb-3">
+                    <h3 class="text-secondary">購買人資訊</h3>
+                </div>
+                <form class="needs-validation" novalidate>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputName">姓名：*</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="王大明" required>
+                            <div class="invalid-feedback">
+                                請填入姓名
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail">Email：*</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="wang123@example.com"
+                                required>
+                            <div class="invalid-feedback">
+                                請填入有效的Email
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md">
+                            <label for="inputCountry">國家：</label>
+                            <select id="inputCountry" class="form-control" required>
+                                <option selected>台灣</option>
+                                <option>美國</option>
+                                <option>日本</option>
+                                <option>南韓</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md">
+                            <label for="inputCity">城市：</label>
+                            <select id="inputCity" class="form-control" required>
+                                <option selected>台北</option>
+                                <option>新北</option>
+                                <option>台中</option>
+                                <option>台南</option>
+                                <option>高雄</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md">
+                            <label for="inputZip">郵遞區號：</label>
+                            <input type="number" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">地址：*</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="台北市大安區羅斯福路四段1號" required>
+                        <div class="invalid-feedback">
+                            請填入有效地址
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                            <label class="form-check-label" for="gridCheck">我同意 <strong>黑狗兄西服</strong> 的 <a
+                                    href="#">購買和退貨規則*</a>
+                            </label>
+                            <div class="invalid-feedback">
+                                您必須同意才能進行付款
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-secondary mr-2">回商品頁</button>
+                        <button type="submit" class="btn btn-primary">確認付款</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start of the Footer -->
+    <footer class="bg-light d-flex justify-content-between py-4">
+        <div class="text-secondary px-5">
+            Copyright © 2019 Bold & Observant.
+        </div>
+        <div class="px-5">
+            <a class="text-info mr-3" href="#">Facebook</a>
+            <a class="text-info mr-3" href="#">Instagram</a>
+            <a class="text-info" href="#">About</a>
+        </div>
+    </footer>
+
+    <!-- Start of the Removal Modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="removeModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="text-white">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>是否刪除此筆訂單？</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-outline-danger">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- script to automatic import info from each button's data-title attribute    -->
+    <script>
+        $(document).ready(function () {
+            $('#removeModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget) // 選則當初觸發事件的按鈕
+                var title = button.data('title') // 使用 data-* 來取得特定內容
+
+                var modal = $(this)
+                modal.find('.modal-title').text('刪除' + title) // 寫入資料
+            })
+        });
+    </script>
+
+
+    <script>
+        // JS for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+div {
+  font-family: Arial, Helvetica, "Microsoft JhengHei", sans-serif;
+}
+
+.btn-cart {
+  background-color: transparent;
+  position: relative;
+}
+
+.btn-cart .badge {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+}
+
+.jumbotron-bg {
+  background-image: url(https://images.unsplash.com/photo-1426523038054-a260f3ef5bc9?w=1900);
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+}
+
+.bg-outerSpace {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.box-shadow {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.box-shadow:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.btn.disabled {
+  pointer-events: none;
+}
+
+.alert-rounded {
+  border-radius: 50px;
+}
+
+.img-rounded {
+  border-radius: 5%;
+}
+
+.img-border {
+  border: #c2c2c2 solid 0.8px;
+}
